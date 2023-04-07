@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-slate);
+    background-color: var(--color-white);
+}
+
+p {text-align: left;}
+h2 {text-transform: capitalize;}
+
+:root {
+    --color-iris: #4d5ae5;
+    --color-ocean: #404bbf;
+    --color-navy-blue: #2e2f42;
+    --color-green: #31d0aa;
+    --color-slate: #434455;
+    --color-light-slate: #8e8f99;
+    --color-cornflower: #e7e9fc;
+    --color-cloud: #f4f4fd;
+    --color-navy-blue-modal: #2e2f42;
+    --color-grey: #2e2f42;
+    --color-white: #ffffff;
+    --color-dairy: #fcfcfc;
+}
+
+/* Page header */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-iris);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo-link {
+    color: var(--color-navy-blue);
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--color-ocean);
+}
+
+.list {
+    list-style: none;
+}
+
+.outh-nav {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+}
+
+.outh-nav .link:hover, 
+.outh-nav .link:focus {
+    color: var(--color-ocean);}
+
+
+/* hero image */
+
+.hero {
+    background-color: var(--color-navy-blue);
+}
+
+.subject {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+}
+
+.button-order {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    background-color: var(--color-iris);
+    font-family: inherit;
+    cursor: pointer;
+    border-color: var(--color-iris);
+}
+.button-order:hover,
+.button-order:focus {background-color: var(--color-ocean);}
+
+/* Section 1 */
+
+.title-hidden {display: none;}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+}
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+}
+
+/* Section 2 */
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+}
+
+/* Section 3 */
+
+.team-section {
+    background-color: var(--color-cloud);
+}
+
+.team-list {
+    background-color: var(--color-white);
+}
+/* Filters */
+
+.button-filter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: var(--color-iris);
+    background-color: var(--color-cloud);
+    border-color: var(--color-cornflower);
+    cursor: pointer;
+}
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--color-white);
+    background-color: var(--color-ocean);
+}
+
+/* Footer */
+
+.footer {
+    color: var(--color-cloud);
+    background-color: var(--color-navy-blue);
+}
+.logo-link-footer {color: var(--color-cloud);}
