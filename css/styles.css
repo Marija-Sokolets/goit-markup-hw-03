@@ -180,7 +180,7 @@ img {
     padding: 120px 0;
 }
 
-.title-hidden {
+.title-hidden-principles {
     display: none;
     margin-bottom: 8px;
 }
@@ -279,9 +279,13 @@ img {
     padding: 96px 0 120px;
 }
 
+.title-hidden-filter {
+    display: none;
+    margin-bottom: 8px;}
+
 .filter-list {
     display: flex;
-    margin: 96px auto 72px;
+    margin-bottom: 72px;
     justify-content: center;
     gap: 24px;
 }
@@ -357,7 +361,7 @@ img {
 .logo-link-footer {color: var(--color-cloud);}
 
 .logo-container {
-    display: flex;
+    display: inline-block;
     align-items: start;
     flex-direction: column;
 }
