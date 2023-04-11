@@ -143,6 +143,8 @@ img {
     background-color: var(--color-navy-blue);
     height: 600px;
     padding: 188px 0;
+    Margin: 0 auto;
+    Text-align: center
 }
 
 .subject {
@@ -152,7 +154,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-white);
-    max-width: 496px;
 }
 
 .button-order {
@@ -168,7 +169,6 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
     height: 56px;
-    display: block;
     min-width: 169px;
 }
 .button-order:hover,
@@ -246,7 +246,7 @@ img {
 }
 
 .team-title {
-    margin-bottom: 72px;
+    margin-bottom: 8px;
 }
 
 .team-list {
@@ -280,6 +280,7 @@ img {
 }
 
 .filter-list {
+    display: flex;
     margin: 96px auto 72px;
     justify-content: center;
     gap: 24px;
