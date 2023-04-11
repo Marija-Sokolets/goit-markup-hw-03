@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <title>Studio</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -20,9 +19,9 @@
   </head>
   <body>
     <!-- Page header -->
-    <div class="container">
-      <header class="page-header">
-        <nav>
+    <header class="page-header">
+      <div class="container nav-container">
+        <nav class="nav-box">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-link">Studio</span></a
           >
@@ -48,8 +47,8 @@
             </li>
           </ul>
         </address>
-      </header>
-    </div>
+      </div>
+    </header>
     <main>
       <!-- hero image -->
       <section class="hero">
@@ -59,8 +58,8 @@
         </div>
       </section>
       <!-- Section 1 -->
-      <section>
-        <div class="container section-principles">
+      <section class="section-principles">
+        <div class="container">
           <h2 class="title-hidden">Basic principles</h2>
           <ul class="list principle-list">
             <li class="principle-item">
@@ -95,11 +94,11 @@
         </div>
       </section>
       <!-- Section 2 -->
-      <section>
+      <section class="doing-section">
         <div class="container">
-          <h2 class="title">What are we doing</h2>
+          <h2 class="title doing-title">What are we doing</h2>
           <ul class="list doing-list">
-            <li>
+            <li class="doing-link">
               <img
                 src="./images/wedoing1.jpg"
                 alt="PHOTO"
@@ -107,7 +106,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="doing-link">
               <img
                 src="./images/wedoing2.jpg"
                 alt="PHOTO"
@@ -115,7 +114,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="doing-link">
               <img
                 src="./images/wedoing3.jpg"
                 alt="PHOTO"
@@ -129,47 +128,55 @@
       <!-- Section 3 -->
       <section class="team-section">
         <div class="container">
-          <h2 class="title">Our Team</h2>
+          <h2 class="title team-title">Our Team</h2>
           <ul class="list team-list">
-            <li class="team-list">
+            <li class="team-link">
               <img
                 src="./images/guerrero.jpg"
                 alt="PHOTO"
                 width="264"
                 height="260"
               />
-              <h3 class="subtitle name">Mark Guerrero</h3>
-              <p class="text position">Product Designer</p>
+              <div class="employee">
+                <h3 class="subtitle name">Mark Guerrero</h3>
+                <p class="text position">Product Designer</p>
+              </div>
             </li>
-            <li class="team-list">
+            <li class="team-link">
               <img
                 src="./images/ford.jpg"
                 alt="PHOTO"
                 width="264"
                 height="260"
               />
-              <h3 class="subtitle name">Tom Ford</h3>
-              <p class="text position">Frontend Developer</p>
+              <div class="employee">
+                <h3 class="subtitle name">Tom Ford</h3>
+                <p class="text position">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-list">
+            <li class="team-link">
               <img
                 src="./images/garcia.jpg"
                 alt="PHOTO"
                 width="264"
                 height="260"
               />
-              <h3 class="subtitle name">Camila Garcia</h3>
-              <p class="text position">Marketing</p>
+              <div class="employee">
+                <h3 class="subtitle name">Camila Garcia</h3>
+                <p class="text position">Marketing</p>
+              </div>
             </li>
-            <li class="team-list">
+            <li class="team-link">
               <img
                 src="./images/wilson.jpg"
                 alt="PHOTO"
                 width="264"
                 height="260"
               />
-              <h3 class="subtitle name">Daniel Wilson</h3>
-              <p class="text position">UI Designer</p>
+              <div class="employee">
+                <h3 class="subtitle name">Daniel Wilson</h3>
+                <p class="text position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

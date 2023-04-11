@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -20,9 +19,9 @@
   </head>
   <body>
     <!-- Page header -->
-    <div class="container">
-      <header class="page-header">
-        <nav>
+    <header class="page-header">
+      <div class="container nav-container">
+        <nav class="nav-box">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-link">Studio</span></a
           >
@@ -50,8 +49,8 @@
             </li>
           </ul>
         </address>
-      </header>
-    </div>
+      </div>
+    </header>
     <main>
       <!-- Filters -->
       <section class="filter">
@@ -68,9 +67,7 @@
               <button type="button" class="button-filter">Marketing</button>
             </li>
           </ul>
-        </div>
-        <div class="container">
-          <ul class="list filter-title section">
+          <ul class="list filter-title">
             <li class="filter-link">
               <a href="" class="link">
                 <img

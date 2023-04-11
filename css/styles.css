@@ -18,8 +18,8 @@ ul {
     list-style: none;
 }
 
-nav {
-    display: flex;
+img {
+    display: block;
 }
 
 :root {
@@ -48,10 +48,21 @@ nav {
 
 .page-header {
     min-height: 72px;
+    border-bottom: 1px solid var(--color-cornflower);
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
 }
 
 .list {
-    display: flex;
     padding: 0;
     margin: 0;
 }
@@ -70,7 +81,7 @@ nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
-    margin: 24px auto;
+    margin-right: 76px;
 }
 
 .logo-link {
@@ -82,14 +93,13 @@ nav {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    margin-top: 24px;
-    margin-left: 76px;
+    display: flex;
+    gap: 40px;
 }
 
 .nav-title {
     color: var(--color-navy-blue);
-    padding: 0;
-    margin-right: 24px;
+    padding: 24px 0;
 }
 
 .site-nav .link:hover, 
@@ -103,13 +113,13 @@ nav {
 
 .outh-nav {
     font-style: normal;
-    display: inline;
+    display: flex;
+    margin-left: auto;
 }
 
 .contact-list {
-    margin-top: 24px;
-    margin-left: 284px;
-
+    display: flex;
+    gap: 40px;
 }
 
 .contact {
@@ -131,8 +141,8 @@ nav {
 
 .hero {
     background-color: var(--color-navy-blue);
-    text-align: center;
     height: 600px;
+    padding: 188px 0;
 }
 
 .subject {
@@ -140,8 +150,9 @@ nav {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--color-white);
-    padding-top: 188px;
+    max-width: 496px;
 }
 
 .button-order {
@@ -156,6 +167,9 @@ nav {
     border: none;
     border-radius: 4px;
     padding: 16px 32px;
+    height: 56px;
+    display: block;
+    min-width: 169px;
 }
 .button-order:hover,
 .button-order:focus {background-color: var(--color-ocean);}
@@ -163,10 +177,13 @@ nav {
 /* Section 1 */
 
 .section-principles {
-    margin-top: 8px;
+    padding: 120px 0;
 }
 
-.title-hidden {display: none;}
+.title-hidden {
+    display: none;
+    margin-bottom: 8px;
+}
 
 .principle-list {
     display: flex;
@@ -195,6 +212,10 @@ nav {
 
 /* Section 2 */
 
+.doing-section {
+    padding-bottom: 120px;
+}
+
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -204,28 +225,59 @@ nav {
     color: var(--color-navy-blue);
 }
 
+.doing-title {
+    margin-bottom: 72px;
+}
+
 .doing-list {
     display: flex;
     gap: 24px;
+}
+
+.doing-link {
+   width: calc((100% - 48px) / 3) 
 }
 
 /* Section 3 */
 
 .team-section {
     background-color: var(--color-cloud);
+    padding: 120px 0;
+}
+
+.team-title {
+    margin-bottom: 72px;
 }
 
 .team-list {
-    background-color: var(--color-white);
+    display: flex;
     gap: 24px;
+}
+
+.team-link {
+    background-color: var(--color-white);
     text-align: center;
 }
 
-.position .name {
+.employee {
+    padding: 32px 16px;
+    border-radius: 0 0 4px 4px;
+}
+
+.position {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.name {
     text-align: center;
 }
 
 /* Filters */
+
+.filter {
+    padding: 96px 0 120px;
+}
 
 .filter-list {
     margin: 96px auto 72px;
@@ -243,16 +295,20 @@ nav {
     cursor: pointer;
     border: 1px solid var(--color-cornflower);
     border-radius: 4px;
+    padding: 12px 24px;
     }
 
 .button-filter:hover,
 .button-filter:focus {
     color: var(--color-white);
     background-color: var(--color-ocean);
-    border: 1px solid var(--color-ocean);}
+    border: 1px solid transparent;}
 
 .filter-title {
+    display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
     justify-content: space-between;
     }
 
@@ -267,13 +323,14 @@ nav {
 }
 
 .filter-link {
-    margin-bottom: 48px;
+    width: calc((100% - 48px) / 3)
 }
 
 .title-text {
     border: 1px solid var(--color-cornflower);
     border-top: none;
-    margin-top: 0;
+    margin-bottom: 8px;
+    padding: 32px 16px;
 }
 
 /* Footer */
@@ -281,8 +338,7 @@ nav {
 .footer {
     color: var(--color-cloud);
     background-color: var(--color-navy-blue);
-    height: 312px;
-    margin-top: 72px;
+    padding: 100px 0;
 }
 
 .logo-footer {
@@ -293,7 +349,8 @@ nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
-    margin-top: 100px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .logo-link-footer {color: var(--color-cloud);}
@@ -305,5 +362,4 @@ nav {
 }
 .logo-footer-text {
     max-width: 268px;
-    margin-bottom: 100px;
 }
